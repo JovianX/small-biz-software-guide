@@ -1,0 +1,17 @@
+<p class="article__byline">
+  {% if authors %}
+    {% set ids = authors %}
+  {% elif author %}
+    {% set ids = [author] %}
+  {% else %}
+    {% set ids = ["editorial"] %}
+  {% endif %}
+  <span class="article__byline-label">By </span>
+  {% for id in ids %}
+    {% set person = people[id] %}
+    {% if person %}
+      <span class="article__author">{{ person.name }}</span>
+      {% if not loop.last %}<span class="article__sep"> and </span>{% endif %}
+    {% endif %}
+  {% endfor %}
+</p>

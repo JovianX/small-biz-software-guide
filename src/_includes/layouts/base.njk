@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{% if title %}{{ title }} · {% endif %}{{ site.name }}</title>
+    {% if description %}
+    <meta name="description" content="{{ description }}" />
+    {% endif %}
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | url }}" />
+    {% if site.ga4 %}
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.ga4 }}"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "{{ site.ga4 }}");
+    </script>
+    {% endif %}
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="site-logo" href="{{ '/' | url }}">{{ site.name }}</a>
+        <nav class="site-nav" aria-label="Primary">
+          <a href="{{ '/' | url }}">Home</a>
+          <a href="{{ '/affiliate-disclosure/' | url }}">Affiliate disclosure</a>
+        </nav>
+      </div>
+    </header>
+    <main id="main" class="site-main">
+      {{ content | safe }}
+    </main>
+    <footer class="site-footer">
+      <div class="site-footer__inner">
+        <p class="site-footer__tagline">{{ site.description }}</p>
+        <p class="site-footer__links">
+          <a href="{{ '/affiliate-disclosure/' | url }}">Affiliate disclosure</a>
+        </p>
+        <p class="site-footer__copy">© {% year %} {{ site.name }}. For solo founders and small teams worldwide.</p>
+      </div>
+    </footer>
+  </body>
+</html>

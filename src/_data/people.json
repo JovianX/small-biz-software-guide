@@ -1,0 +1,14 @@
+{
+  "editorial": {
+    "name": "Editorial",
+    "role": "Editorial team"
+  },
+  "alex-rivera": {
+    "name": "Alex Rivera",
+    "role": "Contributor"
+  },
+  "jordan-kim": {
+    "name": "Jordan Kim",
+    "role": "Contributor"
+  }
+}

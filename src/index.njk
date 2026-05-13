@@ -1,0 +1,32 @@
+---
+layout: layouts/base.njk
+title: Home
+description: "Software picks, comparisons, and category explainers for solo founders and 5–50 person teams—written to surface the hidden issues."
+---
+
+<section class="hero">
+  <p class="hero__eyebrow">Small teams · real constraints</p>
+  <h1 class="hero__title">Buy software with your eyes open.</h1>
+  <p class="hero__lede">
+    Long-form reviews, tight roundups, and A-vs-B comparisons focused on what vendor homepages smooth over: pricing cliffs, admin overhead,
+    edge-case bugs, and the “sounds cheap until you scale” traps.
+  </p>
+</section>
+
+<ul class="post-list">
+  {% for post in collections.posts %}
+    <li class="post-card">
+      <div class="post-card__meta">
+        <span class="post-card__type">{{ post.data.type | contentTypeLabel }}</span>
+        <span aria-hidden="true">·</span>
+        <time datetime="{{ post.date | htmlDate }}">{{ post.date | readableDate }}</time>
+      </div>
+      <h2 class="post-card__title">
+        <a href="{{ post.url | url }}">{{ post.data.title }}</a>
+      </h2>
+      {% if post.data.description %}
+        <p class="post-card__dek">{{ post.data.description }}</p>
+      {% endif %}
+    </li>
+  {% endfor %}
+</ul>
