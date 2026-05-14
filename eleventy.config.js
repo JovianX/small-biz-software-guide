@@ -34,7 +34,7 @@ export default function (eleventyConfig) {
   });
 
   eleventyConfig.addCollection("posts", (api) =>
-    api.getFilteredByGlob("posts/**/*.md").sort((a, b) => b.date - a.date),
+    api.getFilteredByGlob("**/posts/**/*.md").sort((a, b) => b.date - a.date),
   );
 
   eleventyConfig.addShortcode("year", () => String(new Date().getUTCFullYear()));
