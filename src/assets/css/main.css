@@ -302,6 +302,12 @@ a:hover {
   color: #be123c;
 }
 
+.type-pill--guides {
+  border-color: rgba(30, 64, 175, 0.22);
+  background: rgba(99, 102, 241, 0.1);
+  color: #1e3a8a;
+}
+
 /* ——— Home hero ——— */
 .hero {
   margin-bottom: var(--space-8);
