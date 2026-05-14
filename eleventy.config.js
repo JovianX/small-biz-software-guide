@@ -28,6 +28,7 @@ export default function (eleventyConfig) {
       roundups: "Roundup",
       comparisons: "Comparison",
       news: "News",
+      guides: "Guide",
     };
     return map[type] || (type ? String(type) : "Article");
   });

@@ -3,10 +3,17 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0c1222" />
     <title>{% if title %}{{ title }} · {% endif %}{{ site.name }}</title>
     {% if description %}
     <meta name="description" content="{{ description }}" />
     {% endif %}
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400..700;1,9..40,400..600&family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..600&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="{{ '/assets/css/main.css' | url }}" />
     {% if site.ga4 %}
     <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.ga4 }}"></script>
@@ -20,14 +27,23 @@
     </script>
     {% endif %}
   </head>
-  <body>
+  <body class="{% if page.url == '/' or page.url == '/index.html' %}page--home{% else %}page--inner{% endif %}">
+    <div class="ambient" aria-hidden="true"></div>
     <a class="skip-link" href="#main">Skip to content</a>
     <header class="site-header">
       <div class="site-header__inner">
-        <a class="site-logo" href="{{ '/' | url }}">{{ site.name }}</a>
+        <a class="site-logo" href="{{ '/' | url }}">
+          <span class="site-logo__mark" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="28" height="28" rx="8" fill="currentColor" opacity="0.12" />
+              <path d="M8 14h12M14 8v12" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" />
+            </svg>
+          </span>
+          <span class="site-logo__text">{{ site.name }}</span>
+        </a>
         <nav class="site-nav" aria-label="Primary">
-          <a href="{{ '/' | url }}">Home</a>
-          <a href="{{ '/affiliate-disclosure/' | url }}">Affiliate disclosure</a>
+          <a class="site-nav__link" href="{{ '/' | url }}">Guides</a>
+          <a class="site-nav__link site-nav__link--muted" href="{{ '/affiliate-disclosure/' | url }}">Disclosure</a>
         </nav>
       </div>
     </header>
@@ -36,11 +52,15 @@
     </main>
     <footer class="site-footer">
       <div class="site-footer__inner">
-        <p class="site-footer__tagline">{{ site.description }}</p>
-        <p class="site-footer__links">
-          <a href="{{ '/affiliate-disclosure/' | url }}">Affiliate disclosure</a>
-        </p>
-        <p class="site-footer__copy">© {% year %} {{ site.name }}. For solo founders and small teams worldwide.</p>
+        <div class="site-footer__brand">
+          <span class="site-footer__name">{{ site.name }}</span>
+          <p class="site-footer__tagline">{{ site.description }}</p>
+        </div>
+        <div class="site-footer__col">
+          <span class="site-footer__label">Trust</span>
+          <a class="site-footer__link" href="{{ '/affiliate-disclosure/' | url }}">Affiliate disclosure</a>
+        </div>
+        <p class="site-footer__copy">© {% year %} {{ site.name }} · Written for solo founders and small teams worldwide.</p>
       </div>
     </footer>
   </body>

@@ -5,12 +5,12 @@ layout: layouts/base.njk
 {% include "partials/affiliate-notice.njk" %}
 {% endif %}
 
-<article class="article">
+<article class="article article--{{ type }}">
   <header class="article__header">
     <p class="article__meta">
-      <span class="article__type">{{ type | contentTypeLabel }}</span>
+      <span class="type-pill type-pill--{{ type }}">{{ type | contentTypeLabel }}</span>
       <span class="article__sep" aria-hidden="true">·</span>
-      <time datetime="{{ date | htmlDate }}">{{ date | readableDate }}</time>
+      <time class="article__time" datetime="{{ date | htmlDate }}">{{ date | readableDate }}</time>
     </p>
     <h1 class="article__title">{{ title }}</h1>
     {% if description %}
