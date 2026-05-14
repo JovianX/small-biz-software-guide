@@ -1,6 +1,6 @@
 ---
 title: "Best project management tools when half your team is non-technical"
-description: "Views, notifications, and the ‘everyone adopted it for a week’ failure mode—what we optimize for in mixed teams."
+description: "Views, notifications, and the ‘everyone adopted it for a week’ failure mode: what we optimize for in mixed teams."
 type: roundups
 date: 2026-05-03
 author: editorial
@@ -13,7 +13,7 @@ Project management fails small teams when the tool demands **process maturity** 
 
 - **Default notification settings** (the real killer of adoption).
 - **Guest/project permission models** for agencies and freelancers.
-- **Reporting** that either helps owners prioritize—or becomes theater.
+- **Reporting** that either helps owners prioritize, or becomes theater.
 
 ## Verdict (starter)
 

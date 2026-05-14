@@ -4,8 +4,8 @@ description: "Revenue recognition-ish needs, multi-currency headaches, and the m
 type: comparisons
 date: 2026-05-07
 authors:
-  - jordan-kim
-  - alex-rivera
+  - nora-quillbridge
+  - eli-kernwell
 affiliate: true
 ---
 
@@ -19,4 +19,4 @@ Founders often choose accounting software the way they choose a bank: **who inte
 
 ## Verdict (starter)
 
-If your ops team is finance-light, bias toward whichever stack your accountant will defend under pressure—not whichever UI you prefer on day one.
+If your ops team is finance-light, bias toward whichever stack your accountant will defend under pressure, not whichever UI you prefer on day one.

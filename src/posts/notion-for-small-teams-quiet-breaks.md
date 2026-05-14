@@ -1,13 +1,13 @@
 ---
 title: "Notion for small teams: where it quietly breaks"
-description: "Permissions, guest limits, and database performance—what we watch when a 10-person company standardizes on Notion."
+description: "Permissions, guest limits, and database performance: what we watch when a 10-person company standardizes on Notion."
 type: reviews
 date: 2026-05-12
-author: alex-rivera
+author: eli-kernwell
 affiliate: true
 ---
 
-Notion markets like infinite flexibility. For small teams, the risk is the opposite: **accidental complexity**—everyone builds their own system until nobody trusts the numbers.
+Notion markets like infinite flexibility. For small teams, the risk is the opposite: **accidental complexity**: everyone builds their own system until nobody trusts the numbers.
 
 ## Hidden issues we look for
 
@@ -17,7 +17,7 @@ Notion markets like infinite flexibility. For small teams, the risk is the oppos
 
 ## Who it fits
 
-Solo founders and tiny pods who want a lightweight wiki + lightweight tasks can win fast—if you keep templates strict.
+Solo founders and tiny pods who want a lightweight wiki + lightweight tasks can win fast if you keep templates strict.
 
 ## Verdict (starter)
 

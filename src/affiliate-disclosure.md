@@ -13,7 +13,7 @@ permalink: /affiliate-disclosure/index.html
   </p>
   <p>
     Affiliate relationships do not determine whether we cover a product, but they can affect which products we can link to with tracking. When
-    something is flawed, we say so—especially the issues that show up after onboarding, when real work hits the tool.
+    something is flawed, we say so, especially the issues that show up after onboarding, when real work hits the tool.
   </p>
   <p>
     This site is written for solo founders and small businesses making practical buying decisions. If you ever feel a piece reads like an ad, tell

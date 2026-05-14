@@ -1,4 +1,4 @@
-/* Small Biz Software Guide — visual system */
+/* Small Biz Software Guide: visual system */
 
 :root {
   color-scheme: light;
@@ -163,7 +163,7 @@ a:hover {
   left: 0.75rem;
 }
 
-/* ——— Header ——— */
+/* --- Header --- */
 .site-header {
   position: sticky;
   top: 0;
@@ -251,7 +251,7 @@ a:hover {
   font-weight: 500;
 }
 
-/* ——— Main shell ——— */
+/* --- Main shell --- */
 .site-main {
   max-width: 72rem;
   margin: 0 auto;
@@ -262,7 +262,7 @@ a:hover {
   padding-top: var(--space-6);
 }
 
-/* ——— Type pills ——— */
+/* --- Type pills --- */
 .type-pill {
   display: inline-flex;
   align-items: center;
@@ -308,7 +308,7 @@ a:hover {
   color: #1e3a8a;
 }
 
-/* ——— Home hero ——— */
+/* --- Home hero --- */
 .hero {
   margin-bottom: var(--space-8);
 }
@@ -450,7 +450,7 @@ a:hover {
   max-width: 22rem;
 }
 
-/* ——— Feed ——— */
+/* --- Feed --- */
 .feed__head {
   margin-bottom: var(--space-5);
   display: grid;
@@ -606,7 +606,7 @@ a:hover {
   color: var(--muted);
 }
 
-/* ——— Affiliate notice ——— */
+/* --- Affiliate notice --- */
 .affiliate-notice {
   max-width: var(--measure);
   margin: 0 auto 2rem;
@@ -647,7 +647,7 @@ a:hover {
   color: var(--ink-soft);
 }
 
-/* ——— Article ——— */
+/* --- Article --- */
 .article {
   max-width: var(--measure);
   margin: 0 auto;
@@ -727,7 +727,7 @@ a:hover {
   color: var(--ink-soft);
 }
 
-/* ——— Prose ——— */
+/* --- Prose --- */
 .prose > * + * {
   margin-top: var(--space-4);
 }
@@ -824,7 +824,7 @@ a:hover {
   text-underline-offset: 3px;
 }
 
-/* ——— Static pages ——— */
+/* --- Static pages --- */
 .page__title {
   font-family: var(--font-display);
   font-weight: 550;
@@ -843,7 +843,7 @@ a:hover {
   margin-top: 1.05rem;
 }
 
-/* ——— Footer ——— */
+/* --- Footer --- */
 .site-footer {
   margin-top: 2rem;
   border-top: 1px solid var(--line);

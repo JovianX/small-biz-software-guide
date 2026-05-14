@@ -1,13 +1,13 @@
 ---
 title: "Slack vs Microsoft Teams for a 12-person company"
-description: "Not ‘which is better’—which one creates fewer expensive habits: notification debt, file sprawl, and guest-access chaos."
+description: "Not ‘which is better,’ but which one creates fewer expensive habits: notification debt, file sprawl, and guest-access chaos."
 type: comparisons
 date: 2026-05-08
-author: alex-rivera
+author: eli-kernwell
 affiliate: true
 ---
 
-If you already pay for Microsoft 365, Teams can feel “free.” If you live in Google Workspace, Slack can feel inevitable. The real comparison is **how your team communicates under stress**—incidents, launches, support escalations.
+If you already pay for Microsoft 365, Teams can feel “free.” If you live in Google Workspace, Slack can feel inevitable. The real comparison is **how your team communicates under stress**: incidents, launches, support escalations.
 
 ## Hidden issues we look for
 

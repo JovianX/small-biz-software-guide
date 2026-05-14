@@ -1,5 +1,5 @@
 ---
-title: "Zoom adjusts pricing again—what SMBs should check in their admin panel"
+title: "Zoom adjusts pricing again: what SMBs should check in their admin panel"
 description: "A practical checklist: renewal dates, add-on bundles, and the meeting types that quietly moved tiers."
 type: news
 date: 2026-05-06

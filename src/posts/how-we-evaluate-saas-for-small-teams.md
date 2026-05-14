@@ -1,11 +1,11 @@
 ---
 title: "How we evaluate SaaS for small teams (and what we mean by ‘hidden issues’)"
-description: "The decision framework behind Small Biz Software Guide—pricing cliffs, admin tax, permissions, and why marketing demos rarely match week six."
+description: "The decision framework behind Small Biz Software Guide: pricing cliffs, admin tax, permissions, and why marketing demos rarely match week six."
 type: guides
 date: 2026-05-14
 authors:
-  - alex-rivera
-  - jordan-kim
+  - eli-kernwell
+  - nora-quillbridge
 affiliate: false
 ---
 
@@ -21,7 +21,7 @@ We write for **global English** readers who operate like a small business even i
 - **Small teams** where “someone will own the admin” actually means “the founder at 11 p.m.”
 - **Operators** who need software to stay boringly reliable because downtime is revenue.
 
-If you are buying enterprise software with a procurement team, a security review queue, and a dedicated admin—our lens is still useful, but it is not optimized for your buying process.
+If you are buying enterprise software with a procurement team, a security review queue, and a dedicated admin, our lens is still useful, but it is not optimized for your buying process.
 
 ## The problem with “best software” pages
 
@@ -31,7 +31,7 @@ Most buyer guides optimize for **clicks**, not **clarity**. That shows up in pre
 - **Pricing pages** that show a cheerful per-seat number while the real bill lives in add-ons, minimums, annual prepay, and “contact sales” gates.
 - **Reviews** that read like rewritten marketing copy, especially when the writer has never migrated data, fixed permissions, or reconciled invoices at month-end.
 
-We are not allergic to affiliate economics—when we use affiliate links, we disclose it prominently—but **money cannot be the reason we avoid saying something is awkward**. If a product is wrong for a common small-team scenario, we say so. If we are uncertain, we say that too.
+We are not allergic to affiliate economics. When we use affiliate links, we disclose it prominently, but **money cannot be the reason we avoid saying something is awkward**. If a product is wrong for a common small-team scenario, we say so. If we are uncertain, we say that too.
 
 ## What we mean by “hidden issues”
 
@@ -79,19 +79,19 @@ Small teams often win early by stitching tools together. Hidden issues show up w
 
 We do not pretend every integration can be lab-tested, but we flag **classes of risk** you should validate before you bet your revenue operations on a chain of zaps.
 
-A practical pre-purchase habit: pick **one** critical integration (for example, “new paid customer in billing → correct customer record in CRM”) and walk it slowly on paper. If you cannot describe the happy path *and* two failure modes, you are not ready to trust automation yet—no matter what the integration gallery shows.
+A practical pre-purchase habit: pick **one** critical integration (for example, “new paid customer in billing → correct customer record in CRM”) and walk it slowly on paper. If you cannot describe the happy path *and* two failure modes, you are not ready to trust automation yet, no matter what the integration gallery shows.
 
 ### 5. Support and edge cases at the worst time
 
 Support quality is hard to review objectively. What we can do is be honest about **where products tend to fracture** for small businesses: tax edge cases, payroll corrections, bank reconciliation weirdness, email deliverability, mobile workflows for owners, and anything involving exports.
 
-If a category is regulated, seasonal, or error-prone, we treat “how painful is recovery?” as a first-class question—not a footnote.
+If a category is regulated, seasonal, or error-prone, we treat “how painful is recovery?” as a first-class question, not a footnote.
 
 ## How we structure different article types
 
 You will see four recurring formats on the home page, plus this **Guide** format for foundational explainers like this one.
 
-**Reviews** focus on one product. We aim to answer: who should buy it, who should not, and what will surprise you after adoption—not a feature tour.
+**Reviews** focus on one product. We aim to answer: who should buy it, who should not, and what will surprise you after adoption, not a feature tour.
 
 **Roundups** compare multiple options in a category with a blunt constraint (for example, teams under ten seats, remote-first payroll, mixed technical skill). Roundups are not exhaustive catalogs; they are **shortlists** with tradeoffs spelled out.
 
@@ -109,7 +109,7 @@ Our shorter posts are often **starters** we expand as we learn what readers bump
 
 When a post includes affiliate links, you will see a disclosure notice at the top. We also maintain a standalone [Affiliate disclosure](/affiliate-disclosure/) page.
 
-Affiliate programs can influence **which tracked links are available**, not whether we acknowledge rough edges. If we ever read like an ad, that is a failure—tell us and we will fix it.
+Affiliate programs can influence **which tracked links are available**, not whether we acknowledge rough edges. If we ever read like an ad, that is a failure, tell us and we will fix it.
 
 ## How to use this site when you are buying on a deadline
 
@@ -126,15 +126,15 @@ Software selection is rarely “pick the highest score.” It is risk management
 Editorial credibility is partly about boundaries. We will not:
 
 - **Invent benchmarks** we did not run, or claim lab-perfect comparisons when we are synthesizing public documentation, pricing pages, and operational experience.
-- **Treat “AI” as a feature** without naming what it automates, what it gets wrong, and what a human still has to verify—especially anywhere money, HR, or customer data is involved.
+- **Treat “AI” as a feature** without naming what it automates, what it gets wrong, and what a human still has to verify, especially anywhere money, HR, or customer data is involved.
 - **Hide uncertainty** behind confident verbs. When pricing is opaque or a roadmap is volatile, we will tell you plainly.
 
 Those limits are not disclaimers for laziness. They are how we keep the writing aligned with how **real buying decisions** get made under time pressure.
 
 ## What we are building next
 
-We will keep publishing reviews, roundups, comparisons, and news notes on a steady cadence—always with the same through-line: **what small teams discover after the demo**.
+We will keep publishing reviews, roundups, comparisons, and news notes on a steady cadence, always with the same through-line: **what small teams discover after the demo**.
 
 If you want a category prioritized, the most useful signal is a concrete scenario: team size, stack, country constraints, and what “success in 30 days” looks like. Small businesses do not buy categories; they buy **outcomes under constraints**.
 
-Welcome to Small Biz Software Guide. We are glad you are here—and we would rather help you say “not this one” with confidence than help you buy the wrong thing faster.
+Welcome to Small Biz Software Guide. We are glad you are here, and we would rather help you say “not this one” with confidence than help you buy the wrong thing faster.

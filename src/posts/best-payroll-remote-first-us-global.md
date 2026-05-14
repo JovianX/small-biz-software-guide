@@ -12,7 +12,7 @@ Payroll is where “we will handle taxes” meets **your actual liability** if f
 ## Hidden issues we look for
 
 - **Implementation timelines** when you add new states mid-year.
-- **Off-cycle runs** and corrections—how painful, how audited.
+- **Off-cycle runs** and corrections: how painful, how audited.
 - **Benefits bundling** that quietly increases per-seat totals.
 
 ## Verdict (starter)

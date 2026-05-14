@@ -1,9 +1,9 @@
 ---
 title: "HubSpot Starter: where ‘free-ish’ becomes a maze of upsells"
-description: "CRM + marketing + service bundles sound unified—until limits push you into upgrades you did not budget as ‘software.’"
+description: "CRM + marketing + service bundles sound unified, until limits push you into upgrades you did not budget as ‘software.’"
 type: reviews
 date: 2026-05-04
-author: jordan-kim
+author: nora-quillbridge
 affiliate: true
 ---
 
@@ -17,4 +17,4 @@ HubSpot can be excellent for teams that want a single spine for marketing and sa
 
 ## Verdict (starter)
 
-Great when you will commit to operating it like a system—not a sidebar experiment next to your real CRM.
+Great when you will commit to operating it like a system, not a sidebar experiment next to your real CRM.

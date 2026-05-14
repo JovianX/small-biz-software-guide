@@ -4,8 +4,8 @@ description: "A shortlist focused on pipeline clarity, email deliverability real
 type: roundups
 date: 2026-05-10
 authors:
-  - alex-rivera
-  - jordan-kim
+  - eli-kernwell
+  - nora-quillbridge
 affiliate: true
 ---
 
@@ -23,4 +23,4 @@ Sequences, call logging, and mobile workflows for founders who sell from the roa
 
 ## Verdict (starter)
 
-Pick the CRM you can keep clean—not the one with the flashiest AI slide deck.
+Pick the CRM you can keep clean, not the one with the flashiest AI slide deck.
