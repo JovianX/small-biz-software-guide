@@ -1,0 +1,34 @@
+{%- set docTitle = (title + ' · ' + site.name) if title else site.name -%}
+{%- set metaDesc = description if description else site.description -%}
+{%- set canonical = page.url | canonicalUrl(site.url) -%}
+{%- set ogImagePath = site.ogImage if site.ogImage else '/assets/og-default.jpg' -%}
+{%- set ogImageAbs = ogImagePath | url | absUrl(site.url) -%}
+{%- set orgId = (site.url | stripTrailingSlash) ~ '/#organization' -%}
+{%- set webId = (site.url | stripTrailingSlash) ~ '/#website' -%}
+
+<title>{{ docTitle }}</title>
+<meta name="description" content="{{ metaDesc }}" />
+<link rel="canonical" href="{{ canonical }}" />
+<link rel="alternate" hreflang="en" href="{{ canonical }}" />
+<link rel="alternate" hreflang="x-default" href="{{ canonical }}" />
+<meta property="og:site_name" content="{{ site.name }}" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="{{ og_type | default('website') }}" />
+<meta property="og:title" content="{{ docTitle }}" />
+<meta property="og:description" content="{{ metaDesc }}" />
+<meta property="og:url" content="{{ canonical }}" />
+<meta property="og:image" content="{{ ogImageAbs }}" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="{{ docTitle }}" />
+<meta name="twitter:description" content="{{ metaDesc }}" />
+<meta name="twitter:image" content="{{ ogImageAbs }}" />
+{%- if site.twitter -%}
+<meta name="twitter:site" content="{{ site.twitter }}" />
+{%- endif -%}
+{%- if og_type == 'article' and date -%}
+<meta property="article:published_time" content="{{ date | htmlDate }}T12:00:00.000Z" />
+<meta property="article:modified_time" content="{{ date | htmlDate }}T12:00:00.000Z" />
+{%- endif -%}
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":{{ orgId | jsonEncode | safe }},"name":{{ site.name | jsonEncode | safe }},"url":{{ site.url | jsonEncode | safe }},"description":{{ site.description | jsonEncode | safe }},"logo":{"@type":"ImageObject","url":{{ ogImageAbs | jsonEncode | safe }}}},{"@type":"WebSite","@id":{{ webId | jsonEncode | safe }},"url":{{ site.url | jsonEncode | safe }},"name":{{ site.name | jsonEncode | safe }},"description":{{ site.description | jsonEncode | safe }},"publisher":{"@id":{{ orgId | jsonEncode | safe }}}}]} 
+</script>

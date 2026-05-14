@@ -1,6 +1,8 @@
 {
   "name": "Small Biz Software Guide",
   "url": "https://smallbizsoftwareguide.com",
-  "description": "Honest software reviews for solo founders and small teams—what marketing pages hide, compared plainly.",
-  "ga4": ""
+  "description": "Honest software reviews for solo founders and small teams: what marketing pages hide, compared plainly.",
+  "ga4": "",
+  "ogImage": "/assets/og-default.jpg",
+  "twitter": ""
 }
