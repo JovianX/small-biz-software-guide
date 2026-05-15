@@ -1,0 +1,38 @@
+---
+description: Human editorial voice; ban obvious AI phrasing, structure, and typography tells
+alwaysApply: true
+---
+
+# Editorial voice (avoid obvious AI tells)
+
+Applies to all user-facing copy: Markdown posts, `.njk`, JSON strings, HTML text, titles, descriptions, and UI strings.
+
+## Typography
+
+- Never use the **em dash** (U+2014). Use a comma, colon, parentheses, or a new sentence.
+- **En dash** (U+2013) only for numeric ranges (for example, 5 to 50 seats written with the en dash between the numbers).
+
+## Banned filler and openers
+
+Do not use these (or close variants): "Let's dive in," "It's important to note," "In today's world," "At the end of the day," "In conclusion," "I hope this helps," "Rest assured," "Whether you're a beginner or an expert," "Without further ado," "Here's the thing," "Game-changer," "Cutting-edge," "Robust," "Seamless," "Leverage" (as business verb), "Unlock," "Elevate," "Landscape" (figurative), "Synergy," "Empower." Prefer plain verbs and nouns.
+
+## Structure and rhythm
+
+- Avoid uplift formulas: "X is not just Y, it's Z," "it's not only about Y, it's Z," "more than Y, it's Z." Say what you mean in one direct clause or two short sentences instead.
+- Do not announce scaffolding every section ("First... Second... Finally...").
+- Do not default to identical three-bullet blocks in every section; vary length and shape.
+- Avoid paired hedges every paragraph ("on the one hand... on the other..."); state a tradeoff in one direct sentence when possible.
+
+## Substance
+
+- Prefer **one concrete scenario** (team size, stack, bill, admin screen) over vague "many teams often typically."
+- For pricing, SKUs, laws, or product behavior: say **what is uncertain**, **as of which date**, or point to **what to verify** instead of sounding definitive from memory.
+
+## Formatting
+
+- Use **bold sparingly** (key terms or warnings), not every line.
+- No emoji in headings or body unless the user explicitly asks.
+
+## Closings
+
+- No generic pep-talk signoffs ("Happy building," "The choice is yours"). End on the decision, checklist, or caveat the reader needs.
