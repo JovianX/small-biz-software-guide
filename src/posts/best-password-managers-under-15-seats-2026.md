@@ -1,6 +1,6 @@
 ---
 title: "Best password managers for teams under 15 seats (2026 shortlist)"
-description: "1Password Business, Bitwarden Enterprise, Dashlane Business, Keeper Business, and NordPass Business, with the failure modes we see after onboarding, not just feature lists."
+description: "1Password Business, Bitwarden Enterprise, Dashlane Business, Keeper Business, and NordPass Business, with failure modes we see after onboarding rather than vendor feature matrices."
 type: roundups
 date: 2026-05-13
 authors:

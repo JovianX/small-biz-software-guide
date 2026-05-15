@@ -35,7 +35,7 @@ Note: **Web Visitors** is called out separately by Pipedrive as **not** part of 
 
 ## Hidden issues we look for
 
-- **Condition depth inside automations**: the published **if/else** limits (3 → 10 → 20 by tier) show up when you try to encode real exceptions: not just “more features,” but “can this workflow exist at all?”
+- **Condition depth inside automations**: the published **if/else** limits (3 → 10 → 20 by tier) show up when you try to encode real exceptions. The blocker is often not “more features”; it is whether the workflow can exist at all under those caps.
 - **Reporting that needs clean data**: **Insights** gets more powerful as you move up, but the charts still punish sloppy fields. **Forecasting** is a hygiene problem disguised as a software problem.
 - **Permissions when you add SDRs and outsourced setters**: deal visibility, custom field edit rights, and “who can mass-edit” become governance questions, not UI questions.
 
