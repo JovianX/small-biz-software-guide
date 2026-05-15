@@ -1,9 +1,6 @@
 ---
 layout: layouts/base.njk
 ---
-{% if affiliate %}
-{% include "partials/affiliate-notice.njk" %}
-{% endif %}
 
 <article class="article article--{{ type }}">
   <header class="article__header">
@@ -21,5 +18,8 @@ layout: layouts/base.njk
   <div class="article__body prose">
     {{ content | safe }}
   </div>
+  {% if affiliate %}
+  {% include "partials/affiliate-notice.njk" %}
+  {% endif %}
 </article>
 {% include "partials/article-jsonld.njk" %}

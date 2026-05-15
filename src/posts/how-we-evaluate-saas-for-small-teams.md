@@ -107,7 +107,7 @@ Our shorter posts are often **starters** we expand as we learn what readers bump
 
 ## Affiliates, incentives, and editorial independence
 
-When a post includes affiliate links, you will see a disclosure notice at the top. We also maintain a standalone [Affiliate disclosure](/affiliate-disclosure/) page.
+When a post includes affiliate links, you will see a short disclosure note at the end of the article. We also maintain a standalone [Affiliate disclosure](/affiliate-disclosure/) page.
 
 Affiliate programs can influence **which tracked links are available**, not whether we acknowledge rough edges. If we ever read like an ad, that is a failure, tell us and we will fix it.
 

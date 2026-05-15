@@ -606,45 +606,36 @@ a:hover {
   color: var(--muted);
 }
 
-/* --- Affiliate notice --- */
+/* --- Affiliate notice (quiet editor's note strip) --- */
 .affiliate-notice {
   max-width: var(--measure);
   margin: 0 auto 2rem;
-  padding: 1rem 1.1rem;
-  border-radius: var(--radius);
-  border: 1px solid rgba(217, 119, 6, 0.28);
-  background: linear-gradient(120deg, rgba(255, 251, 235, 0.95), rgba(255, 255, 255, 0.85));
-  box-shadow: var(--shadow-sm), inset 0 1px 0 rgba(255, 255, 255, 0.65);
-  display: flex;
-  gap: 0.85rem;
-  align-items: flex-start;
-}
-
-.affiliate-notice__icon {
-  flex-shrink: 0;
-  width: 40px;
-  height: 40px;
-  display: grid;
-  place-items: center;
-  border-radius: 12px;
-  background: rgba(251, 191, 36, 0.2);
-  color: var(--amber);
+  padding: 0.85rem 1rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--line);
+  background: var(--surface);
+  display: block;
 }
 
 .affiliate-notice__title {
-  margin: 0 0 0.25rem;
-  font-size: 0.82rem;
-  font-weight: 800;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: #92400e;
+  margin: 0 0 0.2rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  text-transform: none;
+  color: var(--muted);
 }
 
 .affiliate-notice__text {
   margin: 0;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   line-height: 1.55;
-  color: var(--ink-soft);
+  color: var(--muted);
+}
+
+.article .affiliate-notice {
+  margin-top: 2.25rem;
+  margin-bottom: 0;
 }
 
 /* --- Article --- */
