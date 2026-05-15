@@ -1,43 +1,90 @@
 ---
 layout: layouts/base.njk
-title: "Software picks, reviews, and comparisons for small teams"
-description: "Software picks, comparisons, and category explainers for solo founders and 5–50 person teams, written to surface the hidden issues."
+title: "Software guides for small teams: reviews, roundups, and comparisons"
+description: "Independent, dated guides for solo founders and 5–50 person teams. We spell out pricing cliffs, admin work, and renewal traps that marketing pages skip."
 ---
 
 <div class="home">
   <section class="hero" aria-labelledby="hero-title">
-    <div class="hero__grid">
-      <div class="hero__content motion-reveal motion-reveal--1">
-        <p class="hero__eyebrow">
-          <span class="hero__dot" aria-hidden="true"></span>
-          Small teams · real constraints
-        </p>
-        <h1 id="hero-title" class="hero__title">Buy software with your eyes open.</h1>
-        <p class="hero__lede">
-          Long-form reviews, tight roundups, and A-vs-B comparisons focused on what vendor homepages smooth over: pricing cliffs, admin overhead,
-          edge-case bugs, and the “sounds cheap until you scale” traps.
-        </p>
-        <ul class="hero__chips" aria-label="What we cover">
-          <li>Hidden limits</li>
-          <li>Pricing cliffs</li>
-          <li>Admin overhead</li>
-        </ul>
-      </div>
-      <aside class="hero__panel motion-reveal motion-reveal--2" aria-label="Site focus">
-        <div class="hero__stat">
-          <span class="hero__stat-value">{{ collections.posts | length }}</span>
-          <span class="hero__stat-label">guides published</span>
+    <div class="hero__shell motion-reveal motion-reveal--1">
+      <div class="hero__grid">
+        <div class="hero__content">
+          <p class="hero__eyebrow">
+            <span class="hero__dot" aria-hidden="true"></span>
+            Independent · written for small teams
+          </p>
+          <h1 id="hero-title" class="hero__title">Buy software with the fine print in view.</h1>
+          <p class="hero__lede">
+            Reviews, roundups, and side-by-side comparisons in plain language. We focus on what is easy to miss until you are paying the bill: seat
+            limits, admin time, renewal jumps, and the "starter tier" walls.
+          </p>
+          <ul class="hero__chips" aria-label="What we cover">
+            <li>Pricing at scale</li>
+            <li>Admin and setup load</li>
+            <li>Renewals and SKUs</li>
+          </ul>
         </div>
-        <p class="hero__panel-copy">Written for solo founders and 5–50 person teams: global English, practical decisions.</p>
-        <div class="hero__panel-accent"></div>
-      </aside>
+        <aside class="hero__panel" aria-label="About this site">
+          <p class="hero__panel-kicker">What you are reading</p>
+          <div class="hero__stat" role="group" aria-label="Published guides count">
+            <span class="hero__stat-value">{{ collections.posts | length }}</span>
+            <span class="hero__stat-label">guides in the library</span>
+          </div>
+          <p class="hero__panel-copy">
+            Each piece is dated. We link out to vendors when it helps you verify pricing and limits; where we earn a commission, we say so up front.
+          </p>
+          <ul class="hero__trust">
+            <li class="hero__trust-item">
+              <span class="hero__trust-icon" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M9 1.75 15.25 4.5v4.25c0 3.45-2.55 6.65-6.25 8.5C5.3 15.4 2.75 12.2 2.75 8.75V4.5L9 1.75z"
+                    stroke="currentColor"
+                    stroke-width="1.35"
+                    stroke-linejoin="round"
+                  />
+                  <path d="M6.25 9 8.1 10.85 12.1 6.9" stroke="currentColor" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </span>
+              <span><strong class="hero__trust-strong">Audience:</strong> solo founders and 5–50 person teams (global English).</span>
+            </li>
+            <li class="hero__trust-item">
+              <span class="hero__trust-icon" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M3.5 5.25h11M3.5 9h11M3.5 12.75h7.5"
+                    stroke="currentColor"
+                    stroke-width="1.35"
+                    stroke-linecap="round"
+                  />
+                  <rect x="2.25" y="2.75" width="13.5" height="12.5" rx="2" stroke="currentColor" stroke-width="1.35" />
+                </svg>
+              </span>
+              <span><strong class="hero__trust-strong">Format:</strong> long-form guides, not scraped specs or one-line blurbs.</span>
+            </li>
+            <li class="hero__trust-item">
+              <span class="hero__trust-icon" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="9" cy="9" r="6.75" stroke="currentColor" stroke-width="1.35" />
+                  <path d="M9 5.65V9l2.35 1.55" stroke="currentColor" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </span>
+              <span>
+                <strong class="hero__trust-strong">Money:</strong>
+                <a class="hero__panel-link" href="{{ '/affiliate-disclosure/' | url }}">Affiliate disclosure</a> (how links are used).
+              </span>
+            </li>
+          </ul>
+          <div class="hero__panel-accent" aria-hidden="true"></div>
+        </aside>
+      </div>
     </div>
   </section>
 
   <section class="feed" aria-labelledby="feed-title">
     <div class="feed__head motion-reveal motion-reveal--3">
       <h2 id="feed-title" class="feed__title">Latest guides</h2>
-      <p class="feed__subtitle">Reviews, roundups, comparisons, and short news notes, newest first.</p>
+      <p class="feed__subtitle">Reviews, roundups, comparisons, and short notes, sorted by publish date so you can see what is new.</p>
     </div>
     <ul class="post-list">
       {% for post in collections.posts %}
