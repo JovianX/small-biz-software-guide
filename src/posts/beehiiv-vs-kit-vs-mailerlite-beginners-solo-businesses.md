@@ -8,11 +8,11 @@ authors:
 affiliate: true
 ---
 
-If you run a **solo business**, “email marketing” usually means one of three jobs: **grow a newsletter audience**, **sell a small catalog of offers to people who already trust you**, or **send reliable broadcasts and simple automations without hiring an operator**. [**beehiiv**](https://www.beehiiv.com/?via=arthur-berezin-X76w) (14-day free trial + 20% OFF for 3 months for new signups through that link), **Kit** (still widely searched as **ConvertKit**), and **MailerLite** are credible answers, but they are not interchangeable defaults.
+If you run a **solo business**, “email marketing” usually means one of three jobs: **grow a newsletter audience**, **sell a small catalog of offers to people who already trust you**, or **send reliable broadcasts and simple automations without hiring an operator**. [**beehiiv**](https://www.beehiiv.com/?via=smallbizsoftwareguide) (14-day free trial + 20% OFF for 3 months for new signups through that link), **Kit** (still widely searched as **ConvertKit**), and **MailerLite** are credible answers, but they are not interchangeable defaults.
 
 Treat every **price, subscriber limit, and deliverability add-on** below as **something to verify on each vendor’s billing page** before you commit. Solo businesses get burned when they assume a headline tier includes **custom domains**, **removed branding**, or **automation depth** they need six weeks later.
 
-## [**beehiiv**](https://www.beehiiv.com/?via=arthur-berezin-X76w) (newsletter growth as the main character)
+## [**beehiiv**](https://www.beehiiv.com/?via=smallbizsoftwareguide) (newsletter growth as the main character)
 
 **What it is built to do:** publish a newsletter, collect subscribers, and stack growth mechanics (referrals, recommendations, ad network participation where available) in one product story that feels native to **newsletter operators** rather than “ecommerce blasts.”
 
@@ -58,7 +58,7 @@ Treat every **price, subscriber limit, and deliverability add-on** below as **so
 
 | If your next 90 days look like… | Lean toward |
 | --- | --- |
-| “I am building audience around a publication and referrals matter.” | [**beehiiv**](https://www.beehiiv.com/?via=arthur-berezin-X76w) |
+| “I am building audience around a publication and referrals matter.” | [**beehiiv**](https://www.beehiiv.com/?via=smallbizsoftwareguide) |
 | “I am selling templates, courses, or coaching through sequences.” | **Kit** |
 | “I need solid email + landing pages + simple automation at sane cost.” | **MailerLite** |
 
@@ -70,10 +70,10 @@ Treat every **price, subscriber limit, and deliverability add-on** below as **so
 
 ## Verdict (starter)
 
-Pick [**beehiiv**](https://www.beehiiv.com/?via=arthur-berezin-X76w) if the newsletter is the business and you want **built-in growth loops** aligned with that shape.
+Pick [**beehiiv**](https://www.beehiiv.com/?via=smallbizsoftwareguide) if the newsletter is the business and you want **built-in growth loops** aligned with that shape.
 
 Pick **Kit** if you are a **solo creator** optimizing for **tags, visual automations, and selling the next product** to the same audience over time.
 
 Pick **MailerLite** if you want **broad email marketing capability** with a beginner-friendly surface and **pricing that usually stays understandable** while you validate the channel.
 
-If you are still stuck, choose the tool whose **default dashboard** matches the work you will do **this week**: write and distribute ([**beehiiv**](https://www.beehiiv.com/?via=arthur-berezin-X76w)), wire a simple funnel (**Kit**), or ship campaigns and a landing page (**MailerLite**). You can always migrate once you have real open and click data tied to a real offer.
+If you are still stuck, choose the tool whose **default dashboard** matches the work you will do **this week**: write and distribute ([**beehiiv**](https://www.beehiiv.com/?via=smallbizsoftwareguide)), wire a simple funnel (**Kit**), or ship campaigns and a landing page (**MailerLite**). You can always migrate once you have real open and click data tied to a real offer.
