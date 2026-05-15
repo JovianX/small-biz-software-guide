@@ -48,9 +48,56 @@
       <div class="site-header__inner">
         <a class="site-logo" href="{{ '/' | url }}">
           <span class="site-logo__mark" aria-hidden="true">
-            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect width="28" height="28" rx="8" fill="currentColor" opacity="0.12" />
-              <path d="M8 14h12M14 8v12" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" />
+            <svg class="site-logo__svg" width="36" height="36" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="sbsg-logo-frame" x1="2" y1="2" x2="38" y2="38" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#ffffff" />
+                  <stop offset="0.55" stop-color="#fbfcfb" />
+                  <stop offset="1" stop-color="#e6f2f0" />
+                </linearGradient>
+                <linearGradient id="sbsg-logo-frame-edge" x1="2" y1="2" x2="22" y2="20" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="rgba(12, 18, 34, 0.14)" />
+                  <stop offset="0.45" stop-color="rgba(12, 18, 34, 0.06)" />
+                  <stop offset="1" stop-color="rgba(12, 18, 34, 0.1)" />
+                </linearGradient>
+                <linearGradient id="sbsg-logo-shield" x1="11" y1="7" x2="29" y2="34" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#127a72" />
+                  <stop offset="0.35" stop-color="#0d6b64" />
+                  <stop offset="0.72" stop-color="#0c5c6f" />
+                  <stop offset="1" stop-color="#312e81" />
+                </linearGradient>
+                <linearGradient id="sbsg-logo-shield-gleam" x1="12" y1="9" x2="26" y2="24" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#ffffff" stop-opacity="0.22" />
+                  <stop offset="0.35" stop-color="#ffffff" stop-opacity="0.06" />
+                  <stop offset="1" stop-color="#ffffff" stop-opacity="0" />
+                </linearGradient>
+                <filter id="sbsg-logo-shield-drop" x="-20%" y="-10%" width="140%" height="130%" color-interpolation-filters="sRGB">
+                  <feDropShadow dx="0" dy="1" stdDeviation="1.25" flood-color="#0c1222" flood-opacity="0.18" />
+                </filter>
+                <clipPath id="sbsg-logo-shield-clip">
+                  <path
+                    d="M20 8.75 29.25 12.25V19.25c0 5.2-3.9 9.6-9.25 11.8-5.35-2.2-9.25-6.6-9.25-11.8v-7L20 8.75z"
+                  />
+                </clipPath>
+              </defs>
+              <rect x="1" y="1" width="38" height="38" rx="11" fill="url(#sbsg-logo-frame)" stroke="url(#sbsg-logo-frame-edge)" stroke-width="1" />
+              <rect x="2.5" y="2.5" width="35" height="35" rx="10" fill="none" stroke="#ffffff" stroke-opacity="0.55" stroke-width="0.75" />
+              <g filter="url(#sbsg-logo-shield-drop)">
+                <path
+                  d="M20 8.75 29.25 12.25V19.25c0 5.2-3.9 9.6-9.25 11.8-5.35-2.2-9.25-6.6-9.25-11.8v-7L20 8.75z"
+                  fill="url(#sbsg-logo-shield)"
+                />
+              </g>
+              <g clip-path="url(#sbsg-logo-shield-clip)">
+                <ellipse cx="17" cy="13" rx="11" ry="9" fill="url(#sbsg-logo-shield-gleam)" />
+              </g>
+              <path
+                d="M14.25 20.35l3.35 3.35 8.4-8.4"
+                stroke="#fffcf7"
+                stroke-width="2.15"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
             </svg>
           </span>
           <span class="site-logo__text">{{ site.name }}</span>
