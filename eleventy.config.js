@@ -1,5 +1,24 @@
 /** @param {import("@11ty/eleventy").UserConfig} eleventyConfig */
 export default function (eleventyConfig) {
+  eleventyConfig.amendLibrary("md", (mdLib) => {
+    const prevOpen = mdLib.renderer.rules.table_open;
+    const prevClose = mdLib.renderer.rules.table_close;
+
+    mdLib.renderer.rules.table_open = (tokens, idx, options, env, self) => {
+      const inner = prevOpen
+        ? prevOpen(tokens, idx, options, env, self)
+        : self.renderToken(tokens, idx, options);
+      return `<div class="prose-table-wrap">\n${inner}`;
+    };
+
+    mdLib.renderer.rules.table_close = (tokens, idx, options, env, self) => {
+      const inner = prevClose
+        ? prevClose(tokens, idx, options, env, self)
+        : self.renderToken(tokens, idx, options);
+      return `${inner}\n</div>`;
+    };
+  });
+
   eleventyConfig.addPassthroughCopy({
     "src/assets": "assets",
     "src/CNAME": "CNAME",
