@@ -979,6 +979,125 @@ a:hover {
   text-underline-offset: 3px;
 }
 
+/* --- Prose tables --- */
+.prose-table-wrap {
+  margin: var(--space-6) 0;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior-x: contain;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--line);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.58));
+  box-shadow: var(--shadow-sm), var(--shadow-inset);
+  scrollbar-width: thin;
+  scrollbar-color: rgba(12, 18, 34, 0.18) transparent;
+}
+
+.prose-table-wrap::before {
+  content: "";
+  display: block;
+  height: 3px;
+  background: linear-gradient(90deg, var(--teal-bright), rgba(79, 70, 229, 0.35));
+  border-radius: var(--radius-sm) var(--radius-sm) 0 0;
+}
+
+.prose-table-wrap::-webkit-scrollbar {
+  height: 6px;
+}
+
+.prose-table-wrap::-webkit-scrollbar-thumb {
+  background: rgba(12, 18, 34, 0.16);
+  border-radius: 999px;
+}
+
+.prose-table-wrap table {
+  width: 100%;
+  min-width: 18rem;
+  border-collapse: collapse;
+  table-layout: fixed;
+  font-family: var(--font-ui);
+  font-size: 0.9375rem;
+  line-height: 1.58;
+  color: var(--ink-soft);
+}
+
+.prose-table-wrap th,
+.prose-table-wrap td {
+  padding: 0.78rem 1.15rem;
+  text-align: left;
+  vertical-align: top;
+  border-bottom: 1px solid var(--line);
+}
+
+.prose-table-wrap th {
+  font-weight: 600;
+  font-size: 0.875rem;
+  letter-spacing: -0.012em;
+  color: var(--ink);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.72), var(--paper-2));
+  border-bottom: 1px solid var(--line-strong);
+  box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.65);
+}
+
+.prose-table-wrap thead th {
+  white-space: normal;
+  padding-top: 0.85rem;
+  padding-bottom: 0.8rem;
+}
+
+.prose-table-wrap tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.prose-table-wrap tbody tr:nth-child(even) td {
+  background: rgba(239, 236, 228, 0.32);
+}
+
+.prose-table-wrap tbody tr:nth-child(odd) td {
+  background: rgba(255, 255, 255, 0.28);
+}
+
+@media (hover: hover) {
+  .prose-table-wrap tbody tr:hover td {
+    background: rgba(15, 155, 138, 0.09);
+  }
+}
+
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+  .prose-table-wrap tbody tr td {
+    transition: background-color 0.2s var(--ease-out);
+  }
+}
+
+/* First column hugs labels; second column takes remaining width */
+.prose-table-wrap th:first-child,
+.prose-table-wrap td:first-child {
+  width: 30%;
+  max-width: 12.5rem;
+  min-width: 6.75rem;
+  padding-left: 1.2rem;
+  padding-right: 1.35rem;
+}
+
+.prose-table-wrap th:last-child,
+.prose-table-wrap td:last-child {
+  width: auto;
+}
+
+.prose-table-wrap td:first-child {
+  font-family: var(--font-display);
+  font-weight: 550;
+  font-size: 0.92rem;
+  letter-spacing: -0.018em;
+  line-height: 1.45;
+  color: var(--ink);
+}
+
+.prose-table-wrap td:last-child {
+  padding-right: 1.25rem;
+  color: var(--ink-soft);
+}
+
 /* --- Static pages --- */
 .page__title {
   font-family: var(--font-display);
@@ -1170,6 +1289,45 @@ a:hover {
     line-height: 1.52;
   }
 
+  .prose-table-wrap {
+    margin: 1.2rem 0;
+    border-radius: 10px;
+  }
+
+  .prose-table-wrap table {
+    min-width: 16rem;
+    font-size: 0.9rem;
+    line-height: 1.55;
+  }
+
+  .prose-table-wrap th,
+  .prose-table-wrap td {
+    padding: 0.68rem 0.85rem;
+  }
+
+  .prose-table-wrap th {
+    font-size: 0.84rem;
+    padding-top: 0.72rem;
+    padding-bottom: 0.68rem;
+  }
+
+  .prose-table-wrap th:first-child,
+  .prose-table-wrap td:first-child {
+    width: 34%;
+    max-width: 9.25rem;
+    min-width: 5.75rem;
+    padding-left: 0.95rem;
+    padding-right: 0.9rem;
+  }
+
+  .prose-table-wrap td:first-child {
+    font-size: 0.88rem;
+  }
+
+  .prose-table-wrap td:last-child {
+    padding-right: 0.95rem;
+  }
+
   .affiliate-notice {
     padding: 0.9rem 0.95rem;
   }
@@ -1352,6 +1510,26 @@ a:hover {
 
   .type-pill {
     border-width: 2px;
+  }
+
+  .prose-table-wrap {
+    border-width: 2px;
+    background: var(--surface-solid);
+  }
+
+  .prose-table-wrap th {
+    background: var(--paper-2);
+    box-shadow: none;
+  }
+
+  .prose-table-wrap tbody tr:nth-child(even) td,
+  .prose-table-wrap tbody tr:nth-child(odd) td {
+    background: transparent;
+  }
+
+  .prose-table-wrap th,
+  .prose-table-wrap td {
+    border-bottom-width: 2px;
   }
 
   .site-header {
